@@ -6,7 +6,6 @@ set -x -eo pipefail
 # Installation
 ###
 
-apk add --no-cache go
 apk add --no-cache curl
 
 curl -sSLo /usr/local/bin/terraform-docs \
@@ -20,7 +19,7 @@ chmod +x /usr/local/bin/terraform-docs
 # Cleaning image
 ###
 
-apk del curl go
+apk del curl
 
 ###
 # CIS Hardening
