@@ -1,4 +1,4 @@
 fxDockerImage(
-  image: 'terraform-docs',
+  image: 'pre-commit',
   pushLatest: true
 )
