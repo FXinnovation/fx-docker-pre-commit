@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -x -eo pipefail
+
+###
+# Installations
+###
+
+apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION}
+
+pip3 install --no-cache --upgrade pip setuptools wheel
+pip3 install pre-commit==${PRE_COMMIT_VERSION}
+chmod +x /usr/bin/pre-commit
+
+curl -sSLo /usr/local/bin/terraform-docs \
+https://github.com/segmentio/terraform-docs/releases/download/${TERRAFORM_DOCS_VERSION}/terraform-docs-${TERRAFORM_DOCS_VERSION}-linux-amd64
+ln -s /usr/local/bin/terraform-docs /usr/local/bin/terraform-docs${TERRAFORM_DOCS_VERSION}
+chmod +x /usr/local/bin/terraform-docs
+
+###
+# Cleaning image
+###
+
+apk del --no-cache curl
+
+###
+# CIS Hardening
+###
+
+chmod 0600 /etc/shadow
+
+touch /etc/login.defs
+chmod 0444 /etc/login.defs
