@@ -6,7 +6,7 @@ set -x -eo pipefail
 # Installations
 ###
 
-apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION}
+apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION} bash=${BASH_VERSION}
 
 pip3 install --no-cache --upgrade pip setuptools wheel
 pip3 install pre-commit==${PRE_COMMIT_VERSION}
