@@ -6,7 +6,7 @@ set -x -eo pipefail
 # Installations
 ###
 
-apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION} bash=${BASH_VERSION}
+apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION} bash=${BASH_VERSION} ca-certificates=${CACERTIFICATES_VERSION}
 
 pip3 install --no-cache --upgrade pip setuptools wheel
 pip3 install pre-commit==${PRE_COMMIT_VERSION}
@@ -16,6 +16,11 @@ curl -sSLo /usr/local/bin/terraform-docs \
 https://github.com/segmentio/terraform-docs/releases/download/${TERRAFORM_DOCS_VERSION}/terraform-docs-${TERRAFORM_DOCS_VERSION}-linux-amd64
 ln -s /usr/local/bin/terraform-docs /usr/local/bin/terraform-docs${TERRAFORM_DOCS_VERSION}
 chmod +x /usr/local/bin/terraform-docs
+
+curl -sSLo /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
+  https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+
+unzip /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/local/bin
 
 ###
 # Cleaning image
