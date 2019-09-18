@@ -25,6 +25,7 @@ curl -sSLo /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz \
   https://kubernetes-helm.storage.googleapis.com/helm-v${HELM_VERSION}-linux-amd64.tar.gz
 tar -xzf /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz
 mv linux-amd64/helm /usr/local/bin/helm
+chmod +x /usr/local/bin/helm
 
 ###
 # Cleaning image
