@@ -22,6 +22,10 @@ curl -sSLo /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
 
 unzip /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/local/bin
 
+curl -o https://kubernetes-helm.storage.googleapis.com/helm-v${HELM_VERSION}-linux-amd64.tar.gz > /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz
+tar -xzf /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz
+mv linux_amd64/helm /usr/local/bin/helm
+
 ###
 # Cleaning image
 ###

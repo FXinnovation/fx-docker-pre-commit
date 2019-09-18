@@ -3,6 +3,7 @@ FROM alpine:3.10
 ENV BASH_VERSION=5.0.0-r0
 ENV CACERTIFICATES_VERSION=20190108-r0
 ENV GIT_VERSION=2.22.0-r0
+ENV HELM_VERSION=2.14.3
 ENV PERL_VERSION=5.28.2-r1
 ENV PRE_COMMIT_VERSION=1.18.3
 ENV PYTHON3_VERSION=3.7.3-r0
@@ -34,6 +35,7 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.schema-version"="1.0.0-rc.1" \
       "org.label-schema.applications.bash.version"=$BASH_VERSION \
       "org.label-schema.applications.ca-certificates.version"=$CACERTIFICATES_VERSION \
+      "org.label-schema.applications.helm.version"=$HELM_VERSION \
       "org.label-schema.applications.git.version"=$GIT_VERSION \
       "org.label-schema.applications.perl.version"=$PERL_VERSION \
       "org.label-schema.applications.pre-commit.version"=$PRE_COMMIT_VERSION \
