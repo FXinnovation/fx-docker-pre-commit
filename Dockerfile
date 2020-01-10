@@ -1,14 +1,14 @@
-FROM alpine:3.10
+FROM alpine:3.11
 
-ENV BASH_VERSION=5.0.0-r0
-ENV CACERTIFICATES_VERSION=20190108-r0
-ENV GIT_VERSION=2.22.0-r0
-ENV HELM_VERSION=2.14.3
-ENV PERL_VERSION=5.28.2-r1
-ENV PRE_COMMIT_VERSION=1.18.3
-ENV PYTHON3_VERSION=3.7.3-r0
-ENV TERRAFORM_VERSION=0.12.8
-ENV TERRAFORM_DOCS_VERSION=v0.6.0
+ENV BASH_VERSION=5.0.11-r1
+ENV CACERTIFICATES_VERSION=20191127-r0
+ENV GIT_VERSION=2.24.1-r0
+ENV HELM_VERSION=2.16.1
+ENV PERL_VERSION=5.30.1-r0
+ENV PRE_COMMIT_VERSION=1.21.0
+ENV PYTHON3_VERSION=3.8.1-r0
+ENV TERRAFORM_VERSION=0.12.19
+ENV TERRAFORM_DOCS_VERSION=v0.7.0
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -27,7 +27,7 @@ ENTRYPOINT ["pre-commit"]
 LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.name"="pre-commit" \
       "org.label-schema.base-image.name"="docker.io/library/alpine" \
-      "org.label-schema.base-image.version"="3.10" \
+      "org.label-schema.base-image.version"="3.11" \
       "org.label-schema.description"="pre-commit in a container" \
       "org.label-schema.url"="https://pre-commit.com/" \
       "org.label-schema.vcs-url"="https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/docker-pre-commit" \
