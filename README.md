@@ -16,7 +16,7 @@ We push a `latest` tag on this repository, to run an older version please checko
 ## Labels
 
 We set labels on our images with additional information on the image.
-We follow the guidelines defined at http://label-schema.org/. 
+We follow the guidelines defined at http://label-schema.org/.
 Visit their website for more information about those labels.
 
 ## Comments & Issues
