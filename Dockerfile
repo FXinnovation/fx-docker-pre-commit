@@ -7,8 +7,10 @@ ENV HELM_VERSION=2.16.1
 ENV PERL_VERSION=5.30.1-r0
 ENV PRE_COMMIT_VERSION=2.2.0
 ENV PYTHON3_VERSION=3.8.2-r0
+
 ENV TERRAFORM_VERSION=0.12.24
 ENV TERRAFORM_DOCS_VERSION=v0.9.1
+ENV TFLINT_VERSION=v0.15.4
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -42,6 +44,7 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.applications.python3.version"=$PYTHON3_VERSION \
       "org.label-schema.applications.terraform.version"=$TERRAFORM_VERSION \
       "org.label-schema.applications.terraform-docs.version"=$TERRAFORM_DOCS_VERSION \
+      "org.label-schema.applications.tflint.version"=$TFLINT_VERSION \
       "org.label-schema.vcs-ref"=$VCS_REF \
       "org.label-schema.version"=$VERSION \
       "org.label-schema.build-date"=$BUILD_DATE \

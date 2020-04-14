@@ -24,8 +24,12 @@ unzip /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/local/bi
 curl -sSLo /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz \
   https://kubernetes-helm.storage.googleapis.com/helm-v${HELM_VERSION}-linux-amd64.tar.gz
 tar -xzf /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz
-mv linux-amd64/helm /usr/local/bin/helm
-chmod +x /usr/local/bin/helm
+install -m 755 linux-amd64/helm /usr/local/bin/
+
+curl -sSLo /tmp/tflint${TFLINT_VERSION}.zip \
+https://github.com/terraform-linters/tflint/releases/download/${TFLINT_VERSION}/tflint_linux_amd64.zip
+unzip /tmp/tflint${TFLINT_VERSION}.zip -d /tmp
+install -m 755 /tmp/tflint /usr/local/bin/
 
 ###
 # Cleaning image
