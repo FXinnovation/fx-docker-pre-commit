@@ -45,3 +45,15 @@ chmod 0600 /etc/shadow
 
 touch /etc/login.defs
 chmod 0444 /etc/login.defs
+
+###
+# Test
+###
+
+pre-commit --version
+
+helm --version
+
+terraform --version
+terraform-docs --version
+tflint --version
