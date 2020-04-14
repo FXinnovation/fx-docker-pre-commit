@@ -52,7 +52,7 @@ chmod 0444 /etc/login.defs
 
 pre-commit --version
 
-helm --version
+helm version
 
 terraform --version
 terraform-docs --version
