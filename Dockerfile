@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:3.12
 
 ENV BASH_VERSION=5.0.11-r1
 ENV CACERTIFICATES_VERSION=20191127-r1
@@ -29,7 +29,7 @@ ENTRYPOINT ["pre-commit"]
 LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.name"="pre-commit" \
       "org.label-schema.base-image.name"="docker.io/library/alpine" \
-      "org.label-schema.base-image.version"="3.11" \
+      "org.label-schema.base-image.version"="3.12" \
       "org.label-schema.description"="pre-commit in a container" \
       "org.label-schema.url"="https://pre-commit.com/" \
       "org.label-schema.vcs-url"="https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/docker-pre-commit" \

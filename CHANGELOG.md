@@ -1,3 +1,7 @@
+1.10.0
+======
+
+- maintenance: pin alpine to 3.12
 1.9.0
 ======
 
