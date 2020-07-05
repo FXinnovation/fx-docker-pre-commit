@@ -2,6 +2,7 @@
 ======
 
 - maintenance: pin alpine to 3.12
+- chore: updates .pre-commit configuration
 1.9.0
 ======
 
