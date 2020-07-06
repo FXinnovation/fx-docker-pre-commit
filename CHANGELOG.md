@@ -4,6 +4,8 @@
 - maintenance: pin alpine to 3.12
 - chore: updates .pre-commit configuration
 - maintenance: pin pre-commit to 2.6.0
+- maintenance: pin pre-commit dependencies to latest version available
+
 1.9.0
 ======
 
