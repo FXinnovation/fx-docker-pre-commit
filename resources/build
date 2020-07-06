@@ -6,10 +6,10 @@ set -x -eo pipefail
 # Installations
 ###
 
-apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION} bash=${BASH_VERSION} ca-certificates=${CACERTIFICATES_VERSION} perl=${PERL_VERSION}
+apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION} bash=${BASH_VERSION} ca-certificates=${CACERTIFICATES_VERSION} perl=${PERL_VERSION} py3-pip
 
-pip install --no-cache --upgrade pip setuptools wheel
-pip install pre-commit==${PRE_COMMIT_VERSION}
+pip3 install --no-cache --upgrade pip setuptools wheel
+pip3 install pre-commit==${PRE_COMMIT_VERSION}
 chmod +x /usr/bin/pre-commit
 
 curl -sSLo /usr/local/bin/terraform-docs \
@@ -35,7 +35,7 @@ install -m 755 /tmp/tflint /usr/local/bin/
 # Cleaning image
 ###
 
-apk del --no-cache curl
+apk del --no-cache curl py3-pip
 
 ###
 # CIS Hardening
