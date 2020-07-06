@@ -7,6 +7,7 @@ ENV HELM_VERSION=2.16.1
 ENV PERL_VERSION=5.30.3-r0
 ENV PRE_COMMIT_VERSION=2.6.0
 ENV PYTHON3_VERSION=3.8.3-r0
+ENV PYTHON3_PIP_VERSION=20.1.1-r0
 
 ENV TERRAFORM_VERSION=0.12.28
 ENV TERRAFORM_DOCS_VERSION=v0.9.1
@@ -42,6 +43,7 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.applications.perl.version"=$PERL_VERSION \
       "org.label-schema.applications.pre-commit.version"=$PRE_COMMIT_VERSION \
       "org.label-schema.applications.python3.version"=$PYTHON3_VERSION \
+      "org.label-schema.applications.python3_pip.version"=$PYTHON3_PIP_VERSION \
       "org.label-schema.applications.terraform.version"=$TERRAFORM_VERSION \
       "org.label-schema.applications.terraform-docs.version"=$TERRAFORM_DOCS_VERSION \
       "org.label-schema.applications.tflint.version"=$TFLINT_VERSION \

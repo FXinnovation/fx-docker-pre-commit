@@ -1,6 +1,7 @@
 1.10.0
 ======
 
+- feat: explicitly pin python3 pip installation
 - maintenance: pin alpine to 3.12
 - chore: updates .pre-commit configuration
 - maintenance: pin pre-commit to 2.6.0
