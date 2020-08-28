@@ -6,10 +6,11 @@ set -x -eo pipefail
 # Installations
 ###
 
-apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION} py3-pip=${PYTHON3_PIP_VERSION} bash=${BASH_VERSION} ca-certificates=${CACERTIFICATES_VERSION} perl=${PERL_VERSION}
+apk add --no-cache curl git=${GIT_VERSION} python3=${PYTHON3_VERSION} py3-pip=${PYTHON3_PIP_VERSION} bash=${BASH_VERSION} ca-certificates=${CACERTIFICATES_VERSION} perl=${PERL_VERSION} gcc=${GCC_VERSION} python3-dev=${PYTHON3_VERSION} musl-dev=${MUSL_DEV_VERSION}
 
-pip3 install --no-cache --upgrade setuptools wheel
-pip3 install pre-commit==${PRE_COMMIT_VERSION}
+pip3 install --no-cache --upgrade setuptools wheel --user
+pip3 install pre-commit==${PRE_COMMIT_VERSION} --user
+ln -s /root/.local/bin/pre-commit /usr/bin/pre-commit
 chmod +x /usr/bin/pre-commit
 
 curl -sSLo /usr/local/bin/terraform-docs \
