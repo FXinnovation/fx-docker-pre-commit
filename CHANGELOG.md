@@ -1,3 +1,9 @@
+1.11.0
+======
+
+- feat: add gcc, python-dev & musl-dev libraries for python pre-commits
+- maintenance: convert pip packages to local installation
+
 1.10.0
 ======
 
