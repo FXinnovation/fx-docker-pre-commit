@@ -1,3 +1,10 @@
+1.12.0
+======
+
+- maintenance: pins tflint to 0.19.1
+- maintenance: pins terraform to 0.13.1
+- maintenance: pins pre-commit config libs to 3.2.0
+
 1.11.0
 ======
 
