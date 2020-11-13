@@ -2,6 +2,8 @@
 ======
 
 - maintenance: pins pre-commit to 2.8.2
+- maintenance: pins terraform to 0.13.5
+- maintenance: pins terraform-docs to 0.10.1
 - chore: bump pre-commit hooks
 
 1.12.0
