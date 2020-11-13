@@ -1,3 +1,9 @@
+1.13.0
+======
+
+- maintenance: pins pre-commit to 2.8.2
+- chore: bump pre-commit hooks
+
 1.12.0
 ======
 
