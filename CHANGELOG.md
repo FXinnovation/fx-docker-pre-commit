@@ -1,3 +1,10 @@
+1.14.0
+======
+
+- maintenance: pins pre-commit to 2.9.2
+- maintenance: pins tflint to 0.21.0
+- maintenance: pins musl-dev to 1.1.24-r10
+
 1.13.0
 ======
 
