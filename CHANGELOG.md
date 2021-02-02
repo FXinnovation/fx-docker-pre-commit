@@ -1,3 +1,19 @@
+1.15.0
+======
+
+- mainteance: pins alpine to 3.13
+- mainteance: pins pre-commit to 2.10.0
+- mainteance: pins terraform to 0.14.5
+- mainteance: pins tflint to 0.24.1
+- mainteance: pins bash to 5.1.0-r0
+- mainteance: pins ca-certificates to 20191127-r5
+- mainteance: pins gcc to 10.2.1_pre1-r3
+- mainteance: pins git to 2.30.0-r0
+- mainteance: pins musl-dev to 1.2.2-r0
+- mainteance: pins perl to 5.32.0-r0
+- mainteance: pins python3 to 3.8.7-r0
+- mainteance: pins pip to 20.3.4-r0
+
 1.14.0
 ======
 
