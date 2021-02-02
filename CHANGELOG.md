@@ -13,6 +13,7 @@
 - mainteance: pins perl to 5.32.0-r0
 - mainteance: pins python3 to 3.8.7-r0
 - mainteance: pins pip to 20.3.4-r0
+- chore: bump pre-commit hooks
 
 1.14.0
 ======
