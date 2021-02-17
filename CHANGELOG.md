@@ -1,3 +1,10 @@
+1.16.0
+======
+
+- maintenance: pins terraform to 0.14.7
+- maintenance: pins terraform-docs to 0.11.0
+- maintenance: pins git to 2.30.1-r0
+
 1.15.0
 ======
 
