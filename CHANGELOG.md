@@ -3,6 +3,7 @@
 
 - mainteance: pins pre-commit to 2.10.1
 - maintenance: pins terraform-docs to 0.11.1
+- maintenance: pins python3 to 3.8.7-r1
 
 1.16.0
 ======
