@@ -1,3 +1,9 @@
+1.17.0
+======
+
+- mainteance: pins pre-commit to 2.10.1
+- maintenance: pins terraform-docs to 0.11.1
+
 1.16.0
 ======
 
