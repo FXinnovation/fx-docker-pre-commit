@@ -2,6 +2,7 @@
 ======
 
 - feat: add TFSec (<https://tfsec.dev>) v0.39.5
+- maintenance: pins terraform-docs to 0.11.2
 
 1.17.0
 ======
