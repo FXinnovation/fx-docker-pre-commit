@@ -1,3 +1,8 @@
+1.18.0
+======
+
+- feat: add TFSec (<https://tfsec.dev>) v0.39.5
+
 1.17.0
 ======
 

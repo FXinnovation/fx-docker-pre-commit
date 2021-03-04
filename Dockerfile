@@ -12,7 +12,8 @@ ENV BASH_VERSION=5.1.0-r0 \
     PYTHON3_PIP_VERSION=20.3.4-r0 \
     TERRAFORM_VERSION=0.14.7 \
     TERRAFORM_DOCS_VERSION=v0.11.1 \
-    TFLINT_VERSION=v0.24.1
+    TFLINT_VERSION=v0.24.1 \
+    TFSEC_VERSION=0.39.5
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -48,6 +49,7 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.applications.terraform.version"=$TERRAFORM_VERSION \
       "org.label-schema.applications.terraform-docs.version"=$TERRAFORM_DOCS_VERSION \
       "org.label-schema.applications.tflint.version"=$TFLINT_VERSION \
+      "org.label-schema.applications.tfsec.version"=$TFSEC_VERSION \
       "org.label-schema.vcs-ref"=$VCS_REF \
       "org.label-schema.version"=$VERSION \
       "org.label-schema.build-date"=$BUILD_DATE \

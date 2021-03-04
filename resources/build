@@ -18,6 +18,11 @@ curl -sSLo /usr/local/bin/terraform-docs \
 ln -s /usr/local/bin/terraform-docs /usr/local/bin/terraform-docs${TERRAFORM_DOCS_VERSION}
 chmod +x /usr/local/bin/terraform-docs
 
+curl -sSLo /usr/local/bin/tfsec \
+  https://github.com/tfsec/tfsec/releases/download/v${TFSEC_VERSION}/tfsec-linux-amd64
+chmod +x /usr/local/bin/tfsec
+/usr/local/bin/tfsec --version
+
 curl -sSLo /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
   https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 unzip /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/local/bin
