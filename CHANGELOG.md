@@ -1,3 +1,12 @@
+1.19.0
+======
+
+- maintenance: pins pre-commit to 2.11.1
+- maintenance: pins terraform to 0.14.8
+- maintenance: pins tflint to 0.25.0
+- maintenance: pins tfsec to 0.39.6
+- maintenance: pins git to 2.30.2-r0
+
 1.18.0
 ======
 
