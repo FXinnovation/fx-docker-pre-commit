@@ -1,3 +1,23 @@
+
+2.1.0 / 2021-07-30
+==================
+
+- fix: `terraform-docs` broken installation + useless symlink.
+- refactor: move all tests at the end of the build for more consistency.
+- maintenance: pins `alpine` to `3.14`.
+- maintenance: pins `bash` to `5.1.4-r0`.
+- maintenance: pins `gcc` to `10.3.1_git20210424-r2`.
+- maintenance: pins `git` to `2.32.0-r0`.
+- maintenance: pins `must-dev` to `1.2.2-r3`.
+- maintenance: pins `perl` to `5.32.1-r0`.
+- maintenance: pins `pre-commit` to `2.13.0`.
+- maintenance: pins `python` to `3.9.5-r1`.
+- maintenance: pins `python-pip` to `20.3.4-r1`.
+* (BREAKING) maintenance: pins `terraform` to `1.0.3`.
+- maintenance: pins `terraform-docs` `v0.14.1`.
+- maintenance: pins `tflint` to `v0.30.0`.
+- maintenance: pins `tfsec` to `0.53.1`.
+
 1.19.0
 ======
 
