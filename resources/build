@@ -18,10 +18,14 @@ curl -sSLo /tmp/terraform-docs-${TERRAFORM_DOCS_VERSION}-linux-amd64.tar.gz \
 tar --directory /usr/local/bin/ -xzf /tmp/terraform-docs-${TERRAFORM_DOCS_VERSION}-linux-amd64.tar.gz terraform-docs
 chmod +x /usr/local/bin/terraform-docs
 
+curl -sSLo /tmp/tflint${TFLINT_VERSION}.zip \
+  https://github.com/terraform-linters/tflint/releases/download/${TFLINT_VERSION}/tflint_linux_amd64.zip
+unzip /tmp/tflint${TFLINT_VERSION}.zip -d /tmp
+install -m 755 /tmp/tflint /usr/local/bin/
+
 curl -sSLo /usr/local/bin/tfsec \
   https://github.com/tfsec/tfsec/releases/download/v${TFSEC_VERSION}/tfsec-linux-amd64
 chmod +x /usr/local/bin/tfsec
-/usr/local/bin/tfsec --version
 
 curl -sSLo /resources/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
   https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
@@ -31,11 +35,6 @@ curl -sSLo /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz \
   https://kubernetes-helm.storage.googleapis.com/helm-v${HELM_VERSION}-linux-amd64.tar.gz
 tar -xzf /resources/helm-v${HELM_VERSION}-linux-amd64.tar.gz
 install -m 755 linux-amd64/helm /usr/local/bin/
-
-curl -sSLo /tmp/tflint${TFLINT_VERSION}.zip \
-https://github.com/terraform-linters/tflint/releases/download/${TFLINT_VERSION}/tflint_linux_amd64.zip
-unzip /tmp/tflint${TFLINT_VERSION}.zip -d /tmp
-install -m 755 /tmp/tflint /usr/local/bin/
 
 ###
 # Cleaning image
@@ -57,7 +56,8 @@ chmod 0444 /etc/login.defs
 ###
 
 pre-commit --version
-
-terraform --version
 terraform-docs --version
 tflint --version
+tfsec --version
+
+terraform --version
