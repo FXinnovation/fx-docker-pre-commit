@@ -1,3 +1,10 @@
+2.2.0
+======
+
+- maintenance: pins `pre-commit` to `2.14.0`.
+- maintenance: pins `terraform-docs` `v0.15.0`.
+- maintenance: pins `tflint` to `v0.31.0`.
+- maintenance: pins `tfsec` to `0.58.4`.
 
 2.1.0
 ======
